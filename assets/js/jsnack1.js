@@ -56,6 +56,7 @@ var totalWeight = 0;
 //Calcolare il peso di tutte le zucchine
 
 for (el of arrZucchine) {
+  console.log("Peso zucchina: " + el["peso"]);
   totalWeight += el["peso"];
 }
 

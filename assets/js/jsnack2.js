@@ -1,3 +1,10 @@
+var arrLess = [];
+var arrMore = [];
+var totalWeightMore = 0;
+var totalWeightLess = 0;
+
+//arrary di oggetti contententi le varietà di zucchine
+
 var arrZucchine = [
   {
     varietà: "zucchina1",
@@ -53,9 +60,6 @@ var arrZucchine = [
 
 //divido in due array separati in base alla lunghezza delle zucchine
 
-var arrLess = [];
-var arrMore = [];
-
 for (el of arrZucchine) {
   if (el["lunghezza"] > 15) {
     arrMore.push(el);
@@ -68,9 +72,6 @@ console.log(arrMore);
 console.log(arrLess);
 
 //stampo il peso totale dei due gruppi di zucchine
-
-var totalWeightMore = 0;
-var totalWeightLess = 0;
 
 for (el of arrMore) {
   totalWeightMore += el["peso"];

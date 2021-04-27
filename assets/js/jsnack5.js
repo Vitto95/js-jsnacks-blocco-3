@@ -27,7 +27,7 @@ function getRandomCode(chars, length) {
     playerCode += chars.charAt(Math.floor(Math.random() * length + 1));
   }
   for (var j = 0; j < limit; j++) {
-    playerCode += Math.floor(Math.random() * 9) + 1;
+    playerCode += Math.floor(Math.random() * 10);
   }
   return playerCode;
 }
@@ -39,3 +39,5 @@ for (var player of basketballTeam) {
 }
 
 console.log(basketballTeam);
+
+//DA CORREGGERE
